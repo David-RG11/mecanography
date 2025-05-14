@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -54,3 +55,61 @@
 </body>
 </html>
 
+=======
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mecanografía</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Practica Mecanografía 🚀</h1>
+        
+        <!-- Selectores de categoría -->
+        <div class="category-section">
+            <div class="category-buttons">
+                <button id="btn-simple" class="category-btn active">Frases</button>
+                <button id="btn-compleja" class="category-btn">Textos</button>
+                <button id="btn-palabras" class="category-btn">Palabras</button>
+                <button id="toggle-more" class="toggle-btn">Más opciones ▾</button>
+            </div>
+            
+            <!-- Categorías adicionales (inicialmente ocultas) -->
+            <div id="more-categories" class="more-categories">
+                <button data-cat="pangramas" class="category-btn">Pangramas</button>
+                <button data-cat="ingles" class="category-btn">Inglés</button>
+                <button data-cat="frances" class="category-btn">Francés</button>
+                <button data-cat="frasesConNumeros" class="category-btn">Frases con Números</button>
+                <button data-cat="frasesConSimbolos" class="category-btn">Frases con Símbolos</button>
+                <button data-cat="codigoPython" class="category-btn">Código Python</button>
+            </div>
+        </div>
+        
+        <!-- Texto a copiar -->
+        <div id="quote" class="quote"></div>
+        
+        <!-- Campo de escritura -->
+        <textarea 
+            id="input" 
+            class="input" 
+            rows="5"
+            placeholder="Escribe aquí el texto de arriba..."
+        ></textarea>
+        
+        <!-- Estadísticas -->
+        <div class="stats">
+            <p>Tiempo: <span id="time">0</span>s</p>
+            <p>Errores: <span id="errors">0</span></p>
+            <p>Velocidad: <span id="speed">0</span> ppm</p>
+        </div>
+
+        <!-- Mensaje de skip frase-->
+        <div id="message" style="display: block; color: blue;">Pulsa Shift + Enter para saltar a nueva frase</div>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
+
+>>>>>>> 6786717759b95816839c6271784d102d64eed9fd
